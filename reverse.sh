@@ -3,7 +3,7 @@
 i=1;    #initialize count
 j=$#;   #get script input size
 
-while [[ $# -gt 1 ]]
+while [[ $# -gt 0 ]]    #changed from $# -gt 1 to fix not running last argument.
 do
     rstring=$(echo $1 | rev);
     echo "Reversing string $i-$1: $rstring";
